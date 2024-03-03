@@ -1,0 +1,23 @@
+.main-image{
+    background-color: blueviolet;
+    height: 350px;
+}
+
+.film-image{
+    background-color: brown;
+    height: 250px;
+}
+
+.selection-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: rgb(20, 207, 207);
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.text-main-color{
+    color: rgb(20, 207, 207);
+}
