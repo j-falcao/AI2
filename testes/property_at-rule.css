@@ -1,0 +1,19 @@
+@property --item-size { /* criar custom property directly in css instead of calling window.CSS.registerProperty({}) in JS */
+  sintax: "<percentage>";
+  inherits: false;
+  initial-value: 40%;
+}
+
+.parent { 
+  --item-size: 60%;
+  width: var(--item-size);
+  height: 50vh;
+  margin: auto;
+  background-color: aqua;
+}
+
+.child { 
+  width: var(--item-size); /* recebe o valor de --item-size da class parent (inheritance) a não ser que seja overwritten */
+  height: 50%;
+  background-color: red;
+}
