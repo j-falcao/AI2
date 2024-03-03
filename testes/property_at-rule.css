@@ -13,7 +13,9 @@
 }
 
 .child { 
+  /* --item-size: 50%; */ /* overwrite */
   width: var(--item-size); /* recebe o valor de --item-size da class parent (inheritance) a não ser que seja overwritten */
   height: 50%;
-  background-color: red;
+  /* --my-color: #ff0000; */
+  background-color: var(--my-color);
 }
