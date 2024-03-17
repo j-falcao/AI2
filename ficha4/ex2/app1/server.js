@@ -6,7 +6,7 @@
 
 var app = require('./app');
 var debug = require('debug')('app1:server');
-var https = require('https');
+var http = require('http');
 
 /**
  * Get port from environment and store in Express.
@@ -20,7 +20,7 @@ app.set('port', port);
  */
 
 
-var server = https.createServer(app);
+var server = http.createServer(app);
 
 /**
  * Listen on provided port, on all network interfaces.
